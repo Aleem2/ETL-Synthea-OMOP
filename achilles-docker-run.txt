@@ -1,0 +1,1 @@
+docker run -d -v /home/vdiuser/CNPG-cluster/:/opt/achilles/workspace --name achilles aleem1uddin/hades-data-quality-dashboard:v1.0 sleep infinity
