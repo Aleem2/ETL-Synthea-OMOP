@@ -23,3 +23,4 @@ This repository captures the code and the process of converting synthetic data c
 2. The R script for evaluating the quality of the [ETLed OMOP dataset is here](DQD-ARDC-12K.R).  
 3. The result can be viewed as an R Shiny dashboard exported as a csv file.   
    * To view the Shiny dashboard, [execute the command](Hades-docker-run.txt) to run the container and point to the link in the browser.
+   * A sample file showing results of DQD run on CSIRO 12k data set is linked [here](dqd_results_ARDC.csv)
