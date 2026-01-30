@@ -1,8 +1,8 @@
- ETL-Synthea-OMOP
+# ETL-Synthea-OMOP
 
 This repository captures the code and the process of converting synthetic data created using Synthea to OMOP CDM. It also captures code to create the data quality dashboard.
 
- Performing ETL on the Synthea dataset
+## Performing ETL on the Synthea dataset
 
 1. The Synthea dataset is usually in csv files. It has its own standard tables and schema structure. However, this structure does not match the OMOP CDM.  
 2. To perform ETL on the Synthea dataset, we use the R package OHDSI/ETL-Synthea. The source code is taken from [https://github.com/OHDSI/ETL-Synthea](https://github.com/OHDSI/ETL-Synthea).  
@@ -17,7 +17,7 @@ This repository captures the code and the process of converting synthetic data c
    2. Next, ATLAS requires CDM v5.3 to be further transformed using SQL queries. This SQL script was created following the process outlined in the GitHub repo linked [https://github.com/OHDSI/WebAPI/wiki/CDM-Configurationresults-schema-tables](https://github.com/OHDSI/WebAPI/wiki/CDM-Configurationresults-schema-tables).  
    3. This link also captures the process of integrating a fresh CDM onto the ATLAS implementation. 
 
-Data Quality Dashboard
+## Data Quality Dashboard
 
 1. The process of creating the data quality dashboard is very similar to the ETL process. It is another R package that requires executing an R script.   
 2. The R script for evaluating the quality of the [ETLed OMOP dataset is here](DQD-ARDC-12K.R).  
